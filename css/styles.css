@@ -1,0 +1,39 @@
+header {
+  top: 0px;
+}
+
+header div {
+  display: inline;
+}
+
+header ul li ul li{
+  list-style: none;
+  border: 0px;
+}
+
+header ul li ul li {
+  display: inline;
+  vertical-align: middle;
+}
+
+header ul li .article-slug {
+  display: none;
+}
+
+header ul li .video-slug {
+  display: none;
+}
+
+header ul li ul .article-image img{
+  height: 100px;
+  width: 100px;
+}
+
+header ul li {
+  list-style: none;
+  border-bottom: 1px solid black;
+}
+
+header #featured-article-list{
+  border-left: 1px solid black;
+}
