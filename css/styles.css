@@ -2,7 +2,7 @@ header {
   top: 0px;
 }
 
-header div {
+header ul {
   display: inline;
 }
 
@@ -36,4 +36,8 @@ header ul li {
 
 header #featured-article-list{
   border-left: 1px solid black;
+}
+
+header #featured-video {
+  width: 650px;
 }
