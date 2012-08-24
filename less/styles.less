@@ -20,18 +20,20 @@ body {
   left: 50%;
   margin-left: -500px;
   position: relative;
+  width: @body-width;
 }
 
 header {
   top: 0px;
   background-color: orange;
   height: 400px;
-  width: @body-width;
+  //width: @body-width;  this made firefox scroll side to side. put width in parent: section id=head
 }
 
  header ul {
   display: inline;
   background-color: white;
+  padding: 0px;  // firefox was adding a 40px left padding 
  }
 
 
@@ -93,9 +95,20 @@ header #featured-article li {
 
 }
 
+#menu nav {
+  position: relative;
+  left: -500px;
+  margin-left: 50%;
+  width: @body-width;
+}
+
 #menu nav ul li{
   display: inline;
   list-style: none;
+}
+
+#menu nav #search {
+  float: right;
 }
 
 #searchbox {
