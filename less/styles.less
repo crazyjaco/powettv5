@@ -105,6 +105,8 @@ header .article-image img{
 #menu nav ul li{
   display: inline;
   list-style: none;
+  margin-left: 5px;
+  margin-right: 15px;
 }
 
 #menu nav #search {
@@ -124,4 +126,23 @@ background: none;
 width: 50px;
 //background: none;
 border: none;
+}
+
+// Main Section (Everything below menu
+
+#main-container {
+  position: relative;
+  width: @body-width;
+  left: 50%;
+  margin-left: -500px;
+}
+
+#sidebar {
+  float: left;
+  width: 350px;
+}
+
+#content {
+  float: right;
+  width: 650px;
 }
