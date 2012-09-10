@@ -1,4 +1,5 @@
 @body-width: 1000px;
+@menu-height: 40px;
 
 body {
   background-color: yellow;
@@ -90,7 +91,6 @@ header #featured-video {
 }
 
 header #featured-article {
-//  border-bottom: 1px solid black;
   margin: 0px;
   padding-left: 0px;
 }
@@ -100,7 +100,6 @@ header #featured-article li {
 }
 
 header #featured-article .article-image {
- // clear: both;
   height: 100px;
 }
 
@@ -118,11 +117,11 @@ header .article-image img{
 
 #menu {
   clear: both;
-  background-color: lightblue;
+  background-color: green;
   top: 0px;
   margin-top: 0px;
   padding-top: 0px;
-  //height: 27px;
+  height: @menu-height;
   width: 100%;
 
 }
@@ -134,11 +133,17 @@ header .article-image img{
   width: @body-width;
 }
 
+#menu nav ul {
+  height: @menu-height;
+  top: 0px;
+}
+
 #menu nav ul li{
   display: inline;
   list-style: none;
   margin-left: 5px;
   margin-right: 15px;
+  //vertical-align: bottom;
 }
 
 #menu nav #search {
